@@ -1,14 +1,92 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <meta name="author" content="Felipe Maximo Colen">
     <meta name="description" content="Projeto de Desenvolvimento Web">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/main.js"></script>
+    <script></script>
     <title>Página Inicial</title>
+    <link rel="icon" href="img/Logo.png">
 </head>
 <body>
-    
+    <div class="inicio container">
+        <img src="img/Logo.png" class="logo">
+    </div>
+    <div class="container menu">
+        <ul class="sbmenu">
+            <li class="limenu"><a href="Index.html" class="linkmenu">Home</a></li>
+            <li class="limenu"><a href="eventos.html" class="linkmenu">Eventos</a></li>
+            <li class="limenu"><a href="sobre.html" class="linkmenu">Sobre</a></li>
+            <li class="limenu"><a href="contato.html" class="linkmenu">Contato</a></li>
+        </ul>
+    </div>
+    <div class="container corpo">
+        <div id="mainSlide" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <a href="major.html"><img src="img/Palco.jpg" class="d-block w-100 imgslide" alt="Palco do evento"></a>
+                <div class="carousel-caption d-none d-md-block">
+                    <h3 class="titulo">Sentinels é campeão do Major Kansas City</h3>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <a href="guiavalencia.html"><img src="img/valenciaregionalfinals.jpg" class="d-block w-100 imgslide" alt="Local/Data EU Regional"></a>
+                <div class="carousel-caption d-none d-md-block">
+                    <h3 class="titulo">Guia do Campeonato Regional HCS EU – Valência</h3>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <a href="fazerenegade.html"><img src="img/renegade.jpg" class="d-block w-100 imgslide" alt="Renegade"></a>
+                <div class="carousel-caption d-none d-md-block">
+                    <h3 class="titulo">Fontes: FaZe mira Renegade após a tentativa de compra da Sentinels falhar</h3>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#mainSlide" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#mainSlide" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <div class="container">
+            <div class="card">
+              <div class="card-body">
+                <a href="fazerenegade.html" class="linknoticia"><h4 id="renegade" class="card-title">Fontes: FaZe mira Renegade após a tentativa de compra da Sentinels falhar</h4></a>
+                <p class="card-text">
+                  FaZe Clan está pronto para pegar a estrela do Cloud9, Jonathan 'Renegade' Willette, cuja mudança para os Sentinels, vencedores do HCS Kansas, 
+                  fracassou devido a desentendimentos de compra[...]
+                </p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <a href="guiavalencia.html" class="linknoticia"><h4 id="valencia" class="card-title">Guia do Campeonato Regional HCS EU – Valência</h4></a>
+                <p class="card-text">
+                  O proximo grande evento HCS é o Campeonato Regional Europeu! Abaixo estão alguns detalhes sobre o torneio que achamos que você estaria interessado[...]
+                </p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <a href="major.html" class="linknoticia"><h4 id="major" class="card-title">Sentinels é campeão do Major Kansas City</h4></a>
+                <p class="card-text">
+                  Entre os dias 29 de abril e 1 de maio, ocorreu o HCS Kansas City Major, evento de Halo Infinite que contou com torneios e uma partida especial. 
+                  No torneio 4v4, o principal, a Sentinels surpreendeu a favorita Cloud9 e se consagrou a grande campeã, interrompendo uma sequência de 
+                  dois títulos seguidos do adversário[...]
+                </p>
+              </div>
+            </div>
+          </div>
+    </div>
 </body>
 </html>
